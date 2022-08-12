@@ -1,0 +1,16 @@
+PODS:
+  - AlimFMDBTool (0.1.0)
+
+DEPENDENCIES:
+  - AlimFMDBTool (from `../`)
+
+EXTERNAL SOURCES:
+  AlimFMDBTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AlimFMDBTool: c33c3b6f91c7ab2c8b5a75149a33c95817e528d0
+
+PODFILE CHECKSUM: 814ba4cf6e6f51b6e8751cd4dff91ab2755f65b1
+
+COCOAPODS: 1.11.2
