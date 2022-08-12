@@ -25,18 +25,33 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'shengmaoyuan' => 'maoyuan.sheng@ctechm.com' }
-  s.source           = { :git => 'https://github.com/shengmaoyuan/AlimFMDBTool.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/SMYdamao/FMDBTool.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'AlimFMDBTool/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'AlimFMDBTool' => ['AlimFMDBTool/Assets/*.png']
-  # }
+  s.source_files = 'AlimFMDBTool/Classes/*.{h,m}'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'AlimDB' do |ss|
+    ss.dependency 'FMDB/SQLCipher'
+    ss.dependency 'YYModel'
+    ss.source_files = 'AlimFMDBTool/Classes/AlimDB/*.{h,m}'
+  end
+
+  s.subspec 'FTS' do |ss|
+    ss.dependency 'FMDB/SQLCipher'
+    ss.source_files = 'AlimFMDBTool/Classes/FTS/*.{h,m}'
+  end
+
+  s.subspec 'FMDBExt' do |ss|
+    ss.dependency 'FMDB/SQLCipher'
+    ss.source_files = 'AlimFMDBTool/Classes/FMDBExt/*.{h,m}'
+  end
+  
+  s.subspec 'Common' do |ss|
+    ss.source_files = 'AlimFMDBTool/Classes/Common/*.{h,m}'
+  end
+
 end
