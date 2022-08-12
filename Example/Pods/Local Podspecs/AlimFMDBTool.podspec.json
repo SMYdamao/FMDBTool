@@ -12,11 +12,47 @@
     "shengmaoyuan": "maoyuan.sheng@ctechm.com"
   },
   "source": {
-    "git": "https://github.com/shengmaoyuan/AlimFMDBTool.git",
+    "git": "https://github.com/SMYdamao/FMDBTool.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "AlimFMDBTool/Classes/**/*"
+  "source_files": "AlimFMDBTool/Classes/*.{h,m}",
+  "subspecs": [
+    {
+      "name": "AlimDB",
+      "dependencies": {
+        "FMDB/SQLCipher": [
+
+        ],
+        "YYModel": [
+
+        ]
+      },
+      "source_files": "AlimFMDBTool/Classes/AlimDB/*.{h,m}"
+    },
+    {
+      "name": "FTS",
+      "dependencies": {
+        "FMDB/SQLCipher": [
+
+        ]
+      },
+      "source_files": "AlimFMDBTool/Classes/FTS/*.{h,m}"
+    },
+    {
+      "name": "FMDBExt",
+      "dependencies": {
+        "FMDB/SQLCipher": [
+
+        ]
+      },
+      "source_files": "AlimFMDBTool/Classes/FMDBExt/*.{h,m}"
+    },
+    {
+      "name": "Common",
+      "source_files": "AlimFMDBTool/Classes/Common/*.{h,m}"
+    }
+  ]
 }

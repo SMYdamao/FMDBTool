@@ -1,15 +1,44 @@
 PODS:
-  - AlimFMDBTool (0.1.0)
+  - AlimFMDBTool (0.1.0):
+    - AlimFMDBTool/AlimDB (= 0.1.0)
+    - AlimFMDBTool/Common (= 0.1.0)
+    - AlimFMDBTool/FMDBExt (= 0.1.0)
+    - AlimFMDBTool/FTS (= 0.1.0)
+  - AlimFMDBTool/AlimDB (0.1.0):
+    - FMDB/SQLCipher
+    - YYModel
+  - AlimFMDBTool/Common (0.1.0)
+  - AlimFMDBTool/FMDBExt (0.1.0):
+    - FMDB/SQLCipher
+  - AlimFMDBTool/FTS (0.1.0):
+    - FMDB/SQLCipher
+  - FMDB/SQLCipher (2.7.5):
+    - SQLCipher
+  - SQLCipher (4.5.1):
+    - SQLCipher/standard (= 4.5.1)
+  - SQLCipher/common (4.5.1)
+  - SQLCipher/standard (4.5.1):
+    - SQLCipher/common
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AlimFMDBTool (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+    - SQLCipher
+    - YYModel
 
 EXTERNAL SOURCES:
   AlimFMDBTool:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AlimFMDBTool: c33c3b6f91c7ab2c8b5a75149a33c95817e528d0
+  AlimFMDBTool: a959160fb7f3dd25fdd1e9a35fac13af1a801700
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  SQLCipher: 712e8416685e8e575b9b0706ffee71678b2fdcf8
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 814ba4cf6e6f51b6e8751cd4dff91ab2755f65b1
 

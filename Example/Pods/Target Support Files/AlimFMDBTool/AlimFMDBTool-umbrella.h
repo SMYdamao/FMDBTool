@@ -10,6 +10,19 @@
 #endif
 #endif
 
+#import "AlimDBTool.h"
+#import "AlimDB+Operate.h"
+#import "AlimDB.h"
+#import "AlimDBMacro.h"
+#import "AlimModel.h"
+#import "AlimSQL.h"
+#import "FMDatabase+Secret.h"
+#import "AlimDBToolDefine.h"
+#import "NSString+DBTool.h"
+#import "FMResultSet+Result.h"
+#import "AlimTokenizers.h"
+#import "FMDatabase+FTS5.h"
+#import "NSString+Tokenizer.h"
 
 FOUNDATION_EXPORT double AlimFMDBToolVersionNumber;
 FOUNDATION_EXPORT const unsigned char AlimFMDBToolVersionString[];
